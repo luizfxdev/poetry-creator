@@ -239,7 +239,7 @@ npm run lint     # Verificar código
 
 Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-## 👥 Equipe
+## 👥 Autor
 
 Desenvolvido com ❤️ por **[Luizfxdev](https://www.linkedin.com/in/luizfxdev)** para inspirar criatividade através da tecnologia.
 
