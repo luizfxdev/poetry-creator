@@ -241,15 +241,16 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ## 👥 Equipe
 
-Desenvolvido com ❤️ pela **Poetry Creator Team** para inspirar criatividade através da tecnologia.
+Desenvolvido com ❤️ por **[Luizfxdev](https://www.linkedin.com/in/luizfxdev)** para inspirar criatividade através da tecnologia.
 
 ---
 
 ## 📞 Suporte
 
 Para suporte e dúvidas:
-- 📧 Email: support@poetry-creator.com
+- 📧 Email: luizfx.dev@gmail.com
 - 📱 Issues: [GitHub Issues](https://github.com/poetry-creator/issues)
 - 📖 Docs: [Documentação Completa](https://docs.poetry-creator.com)
+
 
 **🎭 Poetry Creator - Onde a tecnologia encontra a arte das palavras! 🎭**
