@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/frontend/public/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Poetry Creator - Gerador de Poesias Multilíngue</title>
+    <meta
+      name="description"
+      content="Crie poemas únicos em português e inglês usando inteligência artificial. Poetry Creator - Gerador de poesias personalizado para inspirar sua criatividade."
+    />
+    <meta
+      name="keywords"
+      content="poesia, poemas, gerador, português, inglês, AI, criatividade, versos, literatura"
+    />
+    <meta name="author" content="@luizfx.dev" />
+
+    <!-- Open Graph para redes sociais -->
+    <meta
+      property="og:title"
+      content="Poetry Creator - Gerador de Poesias Multilíngue"
+    />
+    <meta
+      property="og:description"
+      content="Crie poemas únicos em português e inglês usando inteligência artificial"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://poetry-creator.com" />
+    <meta property="og:image" content="/poetry-creator-og.jpg" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Poetry Creator" />
+
+    <!-- Theme colors corrigidas para dourado -->
+    <meta name="theme-color" content="#D4A574" />
+    <meta name="msapplication-TileColor" content="#D4A574" />
+
+    <!-- Preconnect para fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Manifest para PWA -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+    <!-- Preload para recursos críticos -->
+    <link
+      rel="preload"
+      href="/frontend/src/assets/background.mp4"
+      as="video"
+      type="video/mp4"
+    />
+
+    <!-- Estilos de carregamento corrigidos com tema dourado -->
+    <style>
+      .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          #1a1a2e 0%,
+          #16213e 50%,
+          #0f3460 100%
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        font-family: 'Lato', sans-serif;
+      }
+
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        border-top: 3px solid #d4a574;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-bottom: 20px;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .loading-text {
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        opacity: 0.9;
+      }
+
+      .loading-subtitle {
+        color: #d4a574;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .loading-screen.fade-out {
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+        pointer-events: none;
+      }
+
+      body.loading {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body class="loading">
+    <!-- Tela de carregamento com tema dourado -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Poetry Creator</div>
+      <div class="loading-subtitle">Carregando gerador de poesias...</div>
+    </div>
+
+    <div id="root" aria-live="polite"></div>
+
+    <script>
+      window.addEventListener('load', function () {
+        setTimeout(() => {
+          const loadingScreen = document.getElementById('loading-screen')
+          const body = document.body
+
+          if (loadingScreen) {
+            loadingScreen.classList.add('fade-out')
+            body.classList.remove('loading')
+
+            setTimeout(() => {
+              if (loadingScreen.parentNode) {
+                loadingScreen.parentNode.removeChild(loadingScreen)
+              }
+            }, 500)
+          }
+        }, 1000)
+      })
+
+      setTimeout(() => {
+        const loadingScreen = document.getElementById('loading-screen')
+        const body = document.body
+
+        if (loadingScreen) {
+          loadingScreen.classList.add('fade-out')
+          body.classList.remove('loading')
+
+          setTimeout(() => {
+            if (loadingScreen.parentNode) {
+              loadingScreen.parentNode.removeChild(loadingScreen)
+            }
+          }, 500)
+        }
+      }, 5000)
+
+      console.log('🎭 Poetry Creator - HTML carregado')
+      console.log('👨‍💻 Desenvolvido por @luizfx.dev')
+      console.log('⏰ Timestamp:', new Date().toISOString())
+    </script>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

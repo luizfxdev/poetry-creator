@@ -1,0 +1,306 @@
+# Poetry Creator - .gitignore
+# Arquivo para ignorar arquivos e pastas desnecessários no Git
+
+# ==================== GERAL ====================
+# General
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory usado por tools como istanbul
+coverage
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript v1 declaration files
+typings/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# ==================== FRONTEND ESPECÍFICO ====================
+# Frontend Specific
+
+# Vite build output
+frontend/dist/
+frontend/build/
+
+# Local env files
+frontend/.env.local
+frontend/.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Vite cache
+frontend/.vite/
+
+# React build
+frontend/build/
+
+# ==================== BACKEND ESPECÍFICO ====================
+# Backend Specific
+
+# Backend build output
+backend/dist/
+backend/build/
+
+# Backend environment files
+backend/.env
+backend/.env.local
+backend/.env.production
+backend/.env.development
+
+# Backend logs
+backend/logs/
+backend/*.log
+
+# Database files (if using local database)
+backend/database/*.db
+backend/database/*.sqlite
+backend/database/*.sqlite3
+
+# Uploads directory (if applicable)
+backend/uploads/
+backend/temp/
+
+# ==================== ASSETS E MEDIA ====================
+# Assets and Media
+
+# Large video files - keep structure but ignore actual files
+frontend/src/assets/*.mp4
+frontend/src/assets/*.mov
+frontend/src/assets/*.avi
+frontend/src/assets/*.wmv
+frontend/src/assets/*.flv
+frontend/public/*.mp4
+frontend/public/*.mov
+
+# Large image files
+*.psd
+*.ai
+*.eps
+*.pdf
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# ==================== DESENVOLVIMENTO ====================
+# Development
+
+# Testing
+coverage/
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.jest/
+
+# Linting
+.eslintcache
+.stylelintcache
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ==================== PRODUÇÃO ====================
+# Production
+
+# Build artifacts
+dist/
+build/
+
+# Compiled CSS
+*.css.map
+
+# Minified files
+*.min.js
+*.min.css
+
+# Source maps
+*.map
+
+# ==================== DOCKER ====================
+# Docker
+
+# Docker files (uncomment if not using Docker)
+# Dockerfile
+# docker-compose.yml
+# .dockerignore
+
+# ==================== PACKAGE MANAGERS ====================
+# Package Managers
+
+# Yarn
+yarn.lock
+.yarn/
+.pnp.*
+
+# npm
+package-lock.json
+
+# pnpm
+pnpm-lock.yaml
+
+# ==================== TEMPORÁRIOS ====================
+# Temporary
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+
+# Cache directories
+.cache/
+*.cache
+
+# Runtime files
+*.pid
+*.lock
+
+# ==================== SEGURANÇA ====================
+# Security
+
+# Private keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Certificates
+*.crt
+*.cer
+
+# Configuration files with secrets
+config/secrets.js
+config/production.json
+secrets/
+
+# ==================== CUSTOM PROJECT FILES ====================
+# Custom Project Files
+
+# Documentation builds
+docs/build/
+docs/_build/
+
+# Storybook build
+storybook-static/
+
+# Analysis files
+bundle-analyzer-report.html
+lighthouse-report.html
+
+# Performance monitoring
+.tracerbench/
+
+# End of .gitignore
