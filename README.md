@@ -249,7 +249,7 @@ Desenvolvido com ❤️ por **[Luizfxdev](https://www.linkedin.com/in/luizfxdev)
 
 Para suporte e dúvidas:
 - 📧 Email: luizfx.dev@gmail.com
-- 📱 Issues: [GitHub Issues](https://github.com/poetry-creator/issues)
+
 
 
 
